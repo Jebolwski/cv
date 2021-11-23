@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-y: hidden;
+}
+
+table {
+    margin-top: 40px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    animation-name: info;
+    animation-duration: 1s;
+     ::selection {
+        color: rgb(82, 78, 78);
+    }
+    .infosRightToPhoto {
+        margin-left: 20px;
+    }
+    img {
+        border-radius: 70px;
+        animation: opacity 2s;
+    }
+    ul {
+        color: rgb(49, 49, 49);
+        display: grid;
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+        animation: opacity 2s;
+        li {
+            transition: 0.5s;
+            float: left;
+            display: flex;
+            &:hover {
+                color: gray;
+                text-decoration: underline;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@keyframes info {
+    from {
+        margin-top: 1000px;
+        transform: rotateY(110deg);
+    }
+    to {
+        margin-top: 40px;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0.5;
+        border-radius: 0px;
+    }
+    to {
+        opacity: 1;
+        border-radius: 70px;
+    }
+}
+
+@keyframes borderRadius {
+    from {
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 70px;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-y: hidden;
+}
+
+table {
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  -webkit-animation-name: info;
+          animation-name: info;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+table ::-moz-selection {
+  color: #524e4e;
+}
+
+table ::selection {
+  color: #524e4e;
+}
+
+table .infosRightToPhoto {
+  margin-left: 20px;
+}
+
+table img {
+  border-radius: 70px;
+  -webkit-animation: opacity 2s;
+          animation: opacity 2s;
+}
+
+table ul {
+  color: #313131;
+  display: -ms-grid;
+  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-animation: opacity 2s;
+          animation: opacity 2s;
+}
+
+table ul li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+table ul li:hover {
+  color: gray;
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes info {
+  from {
+    margin-top: 1000px;
+    -webkit-transform: rotateY(110deg);
+            transform: rotateY(110deg);
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+@keyframes info {
+  from {
+    margin-top: 1000px;
+    -webkit-transform: rotateY(110deg);
+            transform: rotateY(110deg);
+  }
+  to {
+    margin-top: 40px;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0.5;
+    border-radius: 0px;
+  }
+  to {
+    opacity: 1;
+    border-radius: 70px;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.5;
+    border-radius: 0px;
+  }
+  to {
+    opacity: 1;
+    border-radius: 70px;
+  }
+}
+
+@-webkit-keyframes borderRadius {
+  from {
+    border-radius: 0px;
+  }
+  to {
+    border-radius: 70px;
+  }
+}
+
+@keyframes borderRadius {
+  from {
+    border-radius: 0px;
+  }
+  to {
+    border-radius: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
